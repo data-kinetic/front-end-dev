@@ -122,7 +122,7 @@ If you run out of time, document what you would have done differently or added w
 If you have questions or encounter technical issues:
 
 1. Open an issue in this repository
-2. Email [assessment-help@company.com]
+2. Create an [Issue](https://github.com/data-kinetic/front-end-dev/issues) and at dgonzo
 
 ## 📜 License
 
