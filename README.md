@@ -8,14 +8,14 @@ Next.js, React Server Components, TanStack Query, and shadcn/ui expertise.
 This assessment consists of two parts:
 
 1. [Written Assessment](./written-assessment.md) (45 minutes)
-    - Technical knowledge questions
-    - System design scenario
-    - Development workflow discussion
+   - Technical knowledge questions
+   - System design scenario
+   - Development workflow discussion
 
 2. [Coding Challenge](./coding-assessment.md) (2 hours)
-    - Practical implementation
-    - Real-world scenario
-    - Technical requirements
+   - Practical implementation
+   - Real-world scenario
+   - Technical requirements
 
 ## 🛠 Prerequisites
 
@@ -24,10 +24,10 @@ This assessment consists of two parts:
 - GitHub account
 - Vercel account (free tier is fine)
 - Experience with:
-    - Next.js
-    - React Server Components
-    - TanStack Query
-    - shadcn/ui
+   - Next.js
+   - React Server Components
+   - TanStack Query
+   - shadcn/ui
 
 ## 🚀 Getting Started
 
@@ -68,8 +68,8 @@ This assessment consists of two parts:
 ## 📋 Submission Process
 
 1. Complete both assessments
-    - Written assessment answers in `written-assessment.md`
-    - Coding challenge implementation as per `coding-assessment.md`
+   - Written assessment answers in `written-assessment.md`
+   - Coding challenge implementation as per `coding-assessment.md`
 
 2. Commit and push your changes
    ```bash
@@ -79,20 +79,20 @@ This assessment consists of two parts:
    ```
 
 3. Deploy to Vercel
-    - Connect your fork to Vercel
-    - Deploy using default settings
-    - Save the deployed URL
+   - Connect your fork to Vercel
+   - Deploy using default settings
+   - Save the deployed URL
 
 4. Create a Pull Request
-    - Go to the original repository
-    - Click "New Pull Request"
-    - Select "Compare across forks"
-    - Select your fork and branch
-    - Use the PR template to provide:
-        - Deployed URL
-        - Implementation notes
-        - Trade-offs made
-        - Future improvements
+   - Go to the original repository
+   - Click "New Pull Request"
+   - Select "Compare across forks"
+   - Select your fork and branch
+   - Use the PR template to provide:
+      - Deployed URL
+      - Implementation notes
+      - Trade-offs made
+      - Future improvements
 
 ## 📁 Repository Structure
 
