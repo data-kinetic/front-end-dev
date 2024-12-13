@@ -1,129 +1,43 @@
-# Frontend Developer Technical Assessment
+# Form Builder Application
 
-Welcome to our Frontend Developer technical assessment! This repository contains a comprehensive evaluation of your
-Next.js, React Server Components, TanStack Query, and shadcn/ui expertise.
+## Setup Instructions
 
-## 📚 Assessment Structure
-
-This assessment consists of two parts:
-
-1. [Written Assessment](frontend-assessment/written-assessment.md) (45 minutes)
-    - Technical knowledge questions
-    - System design scenario
-    - Development workflow discussion
-
-2. [Coding Challenge](frontend-assessment/coding-assessment.md) (2 hours)
-    - Practical implementation
-    - Real-world scenario
-    - Technical requirements
-
-## 🛠 Prerequisites
-
-- Node.js 18.x or higher
-- Git
-- GitHub account
-- Vercel account (free tier is fine)
-- Experience with:
-    - Next.js
-    - React Server Components
-    - TanStack Query
-    - shadcn/ui
-
-## 🚀 Getting Started
-
-1. Fork this repository
+1. Clone the repository:
    ```bash
-   # Click the 'Fork' button in the top right of this repository
-   ```
+   git clone <repository-url>
+   cd <repository-directory>
 
-2. Clone your fork
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/frontend-assessment.git
-   cd frontend-assessment
-   ```
-
-3. Create a solution branch
-   ```bash
-   git checkout -b solution/YOUR_NAME
-   ```
-
-4. Install dependencies
-   ```bash
-   npm install
-   # or
-   yarn install
-   # or
-   pnpm install
-   ```
-
-5. Start the development server
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
-   ```
-
-## 📋 Submission Process
-
-1. Complete both assessments
-    - Written assessment answers in `written-assessment.md`
-    - Coding challenge implementation as per `coding-assessment.md`
-
-2. Commit and push your changes
-   ```bash
-   git add .
-   git commit -m "Complete technical assessment"
-   git push origin solution/YOUR_NAME
-   ```
-
-3. Deploy to Vercel
-    - Connect your fork to Vercel
-    - Deploy using default settings
-    - Save the deployed URL
-
-4. Create a Pull Request
-    - Go to the original repository
-    - Click "New Pull Request"
-    - Select "Compare across forks"
-    - Select your fork and branch
-    - Use the PR template to provide:
-        - Deployed URL
-        - Implementation notes
-        - Trade-offs made
-        - Future improvements
-
-## 📁 Repository Structure
-
+Install dependencies:
 ```
-frontend-assessment/
-├── README.md              # This file
-├── written-assessment.md  # Written assessment questions
-├── coding-assessment.md   # Coding challenge details
-├── app/                   # Next.js application
-├── components/            # Reusable components
-├── lib/                   # Utility functions
-├── styles/               # Global styles
-└── public/               # Static assets
+npm install
+# or
+yarn install
+Start the development server:  
+npm run dev
+# or
+yarn dev
 ```
 
-## ⏰ Time Management
+## Architecture Decisions
+Next.js App Router: Utilized for routing and server-side rendering.
+React Server Components: Implemented where possible to improve performance and reduce client-side JavaScript.
+TanStack Query: Used for data fetching and caching to manage server state efficiently.
+shadcn/ui Components: Leveraged for consistent and reusable UI components.
+Custom Components: Created for form elements and validation to ensure modularity and reusability.
 
-We respect your time! The assessment is designed to be completed within the following timeframes:
+## Trade-offs Made
+Incomplete Server-Side Components: Due to time constraints, not all components were fully implemented as server-side components.
+CSS Quality: The styling is basic and needs improvement for a better user experience.
+Drag and Drop Functionality: Implemented but currently buggy and needs refinement.
+Validation: Basic validation is in place but has some issues that need to be addressed.
+Feature Implementation: Not all core features were implemented due to time constraints.
 
-- Written Assessment: 45 minutes
-- Coding Challenge: 2 hours
-
-If you run out of time, document what you would have done differently or added with more time.
-
-## 🤝 Need Help?
-
-If you have questions or encounter technical issues:
-
-1. Open an issue in this repository
-2. Create an [Issue](https://github.com/data-kinetic/front-end-dev/issues) and at dgonzo
-
-## 📜 License
-
-This assessment is for evaluation purposes only. All rights reserved.
+## Future Improvements
+fetchForms: Implement a function to fetch form data from the API and populate the form builder with existing forms.
+Complete Server-Side Components: Fully implement server-side components with TanStack Query for better performance.
+Improve CSS: Enhance the styling to provide a more polished and user-friendly interface.
+Fix Drag and Drop: Resolve bugs in the drag and drop functionality to ensure smooth user interactions.
+Enhance Validation: Improve validation logic to handle more complex scenarios and provide better user feedback.
+Add Missing Features: Implement the remaining core features such as additional form elements and advanced configuration options.
+Testing: Add comprehensive tests to ensure the reliability and stability of the application.
+Documentation: Expand the documentation to cover all aspects of the application, including detailed setup instructions and usage examples.
