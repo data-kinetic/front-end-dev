@@ -247,7 +247,7 @@ Provide diagrams or pseudo-code where appropriate to illustrate your design deci
    TanStack Query Error Handling: Use onError callbacks to handle errors during data fetching.
    Global Error Handler: Implement a global error handler to log and display errors.
 
-![Diagram](./diagram.png)
+![Diagram](diagram.png)
 
 ## Submission Guidelines
 

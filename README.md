@@ -7,12 +7,12 @@ Next.js, React Server Components, TanStack Query, and shadcn/ui expertise.
 
 This assessment consists of two parts:
 
-1. [Written Assessment](./written-assessment.md) (45 minutes)
+1. [Written Assessment](frontend-assessment/written-assessment.md) (45 minutes)
     - Technical knowledge questions
     - System design scenario
     - Development workflow discussion
 
-2. [Coding Challenge](./coding-assessment.md) (2 hours)
+2. [Coding Challenge](frontend-assessment/coding-assessment.md) (2 hours)
     - Practical implementation
     - Real-world scenario
     - Technical requirements
