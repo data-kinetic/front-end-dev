@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Form Builder Application
 
-## Getting Started
+## Setup Instructions
 
-First, run the development server:
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
 
-```bash
+Install dependencies:
+```
+npm install
+# or
+yarn install
+Start the development server:  
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Architecture Decisions
+Next.js App Router: Utilized for routing and server-side rendering.
+React Server Components: Implemented where possible to improve performance and reduce client-side JavaScript.
+TanStack Query: Used for data fetching and caching to manage server state efficiently.
+shadcn/ui Components: Leveraged for consistent and reusable UI components.
+Custom Components: Created for form elements and validation to ensure modularity and reusability.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Trade-offs Made
+Incomplete Server-Side Components: Due to time constraints, not all components were fully implemented as server-side components.
+CSS Quality: The styling is basic and needs improvement for a better user experience.
+Drag and Drop Functionality: Implemented but currently buggy and needs refinement.
+Validation: Basic validation is in place but has some issues that need to be addressed.
+Feature Implementation: Not all core features were implemented due to time constraints.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Future Improvements
+Complete Server-Side Components: Fully implement server-side components with TanStack Query for better performance.
+Improve CSS: Enhance the styling to provide a more polished and user-friendly interface.
+Fix Drag and Drop: Resolve bugs in the drag and drop functionality to ensure smooth user interactions.
+Enhance Validation: Improve validation logic to handle more complex scenarios and provide better user feedback.
+Add Missing Features: Implement the remaining core features such as additional form elements and advanced configuration options.
+Testing: Add comprehensive tests to ensure the reliability and stability of the application.
+Documentation: Expand the documentation to cover all aspects of the application, including detailed setup instructions and usage examples.

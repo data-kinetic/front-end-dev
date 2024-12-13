@@ -1,0 +1,43 @@
+.form-builder {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.draggable-item {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: grab;
+}
+
+.droppable-area {
+    min-height: 200px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    background: #e6f7ff;
+    border-radius: 8px;
+}
+
+.element-config {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.validation-config {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-preview {
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+}

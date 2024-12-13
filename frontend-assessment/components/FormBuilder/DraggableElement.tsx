@@ -1,12 +1,14 @@
 import React, { ReactNode, useRef, useEffect } from 'react';
 import { useDrag, DragSourceMonitor } from 'react-dnd';
+import "./styles.css"
 
 interface DraggableElementProps {
     type: string;
-    children: ReactNode;
+    label: string;
+    children?: ReactNode;
 }
 
-const DraggableElement: React.FC<DraggableElementProps> = ({ type, children }) => {
+const DraggableElement: React.FC<DraggableElementProps> = ({ type, label, children }) => {
     const ref = useRef<HTMLDivElement>(null);
 
     const [{ isDragging }, drag] = useDrag(() => ({
@@ -24,10 +26,11 @@ const DraggableElement: React.FC<DraggableElementProps> = ({ type, children }) =
     }, [ref, drag]);
 
     return (
-            <div ref={ref} style={{ opacity: isDragging ? 0.5 : 1 }}>
+            <div ref={ref} className="draggable-item">
+                {label}
                 {children}
             </div>
     );
 };
 
-export default DraggableElement;
+export default DraggableElement;;
