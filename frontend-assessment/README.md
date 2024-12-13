@@ -33,6 +33,7 @@ Validation: Basic validation is in place but has some issues that need to be add
 Feature Implementation: Not all core features were implemented due to time constraints.
 
 ## Future Improvements
+fetchForms: Implement a function to fetch form data from the API and populate the form builder with existing forms.
 Complete Server-Side Components: Fully implement server-side components with TanStack Query for better performance.
 Improve CSS: Enhance the styling to provide a more polished and user-friendly interface.
 Fix Drag and Drop: Resolve bugs in the drag and drop functionality to ensure smooth user interactions.

@@ -1,23 +1,23 @@
-"use client"
-
 import React from 'react';
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
-import { QueryClientProvider } from '@tanstack/react-query';
-import queryClient from '@/lib/queryClient';
-import FormBuilder from '@/components/FormBuilder/FormBuilder';
+import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function Home() {
     return (
-            <QueryClientProvider client={queryClient}>
-                <DndProvider backend={HTML5Backend}>
-                    <div className={styles.page}>
-                        <main className={styles.main}>
-                            <FormBuilder />
-                        </main>
-                    </div>
-                </DndProvider>
-            </QueryClientProvider>
+            <div className={styles.page}>
+                <main className={styles.main}>
+                    <h1>Welcome to the Form Builder Application</h1>
+                    <nav>
+                        <ul>
+                            <li>
+                                <Link href="/formbuilder">Form Builder</Link>
+                            </li>
+                            <li>
+                                <Link href="/fetchforms">Fetch Forms</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </main>
+            </div>
     );
 }
