@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { templates, TemplateType } from '../templateStorage';
+import { templates } from '../templateStorage';
 
 // DELETE /api/templates/:id
 export async function DELETE(req: NextRequest, { params }: { params: { id: string } }) {

@@ -4,4 +4,4 @@ export type TemplateType = {
 };
 
 // Temporary in-memory storage for templates
-export let templates: TemplateType[] = [];
+export const templates: TemplateType[] = [];

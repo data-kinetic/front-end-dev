@@ -5,7 +5,7 @@ import { componentsList } from "@/app/utils/constants/componentsList";
 export const Sidebar = ({
   droppedComponents,
 }: {
-  droppedComponents: Array<{ id: string; componentId: string; value: any }>;
+  droppedComponents: Array<{ id: string; componentId: string; value: string }>;
 }) => {
 
   const updatedComponentsList = useMemo(() => {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { DndContext } from "@dnd-kit/core";
+import { DndContext, DragEndEvent } from "@dnd-kit/core";
 import { Sidebar } from "@/components/Sidebar";
 import { Canvas } from "@/components/Canvas";
 import {
@@ -17,14 +17,14 @@ export default function HomePage() {
     Array<{ id: string; componentId: string; value: string }>
   >([]);
 
-  const handleDragEnd = (event: any) => {
+  const handleDragEnd = (event: DragEndEvent) => {
     const { active, over } = event;
 
     if (over && active.id !== over.id) {
       setDroppedComponents((prev) => [
         ...prev,
         {
-          id: active.id,
+          id: String(active.id),
           componentId: `${active.id}-${Date.now()}`,
           value: "",
         },

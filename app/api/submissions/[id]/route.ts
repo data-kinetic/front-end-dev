@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const submissions: any = [];
+type Submissions = {
+  formId: string;
+}
+const submissions: Submissions[] = [];
 
 export function GET(req: NextRequest, { params }: { params: { formId: string } }) {
   const { formId } = params;

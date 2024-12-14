@@ -48,7 +48,7 @@ export const Canvas = ({ droppedComponents, setDroppedComponents }: CanvasProps)
 
   // Dynamically build the validation scheme based on droppedComponents
   const formSchema = useMemo(() => {
-    const schema: Record<string, any> = {};
+    const schema: Record<string, z.ZodTypeAny> = {};
 
     droppedComponents.forEach((component) => {
       switch (component.id) {
@@ -92,7 +92,7 @@ export const Canvas = ({ droppedComponents, setDroppedComponents }: CanvasProps)
     defaultValues: droppedComponents.reduce((defaults, component) => {
       defaults[component.id] = component.value || "";
       return defaults;
-    }, {} as Record<string, any>),
+    }, {} as Record<string, string | boolean>),
   });
 
   // Create mutation for new template
@@ -101,7 +101,10 @@ export const Canvas = ({ droppedComponents, setDroppedComponents }: CanvasProps)
       await axios.post("/api/templates", newTemplate);
     },
     onSuccess: () => {
-      queryClient.invalidateQueries(["templates"], { exact: true });
+      queryClient.invalidateQueries({
+        queryKey: ["templates"],
+        exact: true,
+      });
     },
   });
 
